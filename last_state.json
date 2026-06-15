@@ -17,9 +17,9 @@
     ],
     "Woonzeker Den Haag (filter page 2)": [
       "slug:archimedesstraat-62",
+      "slug:beeklaan-343-c",
       "slug:bosschestraat-136",
       "slug:dr-lelykade-150",
-      "slug:frederik-hendriklaan-184-b",
       "slug:heemskerckstraat-17-kamer-5",
       "slug:maystraat-93",
       "slug:stokroosstraat-237",
@@ -72,7 +72,16 @@
     ],
     "Immovita": [
       "/aanbod",
-      "/aanbod/woning",
+      "/aanbod/woning?id=6047",
+      "/aanbod/woning?id=6394",
+      "/aanbod/woning?id=6395",
+      "/aanbod/woning?id=6398",
+      "/aanbod/woning?id=6409",
+      "/aanbod/woning?id=6413",
+      "/aanbod/woning?id=6415",
+      "/aanbod/woning?id=6417",
+      "/aanbod/woning?id=6419",
+      "/aanbod/woning?id=6421",
       "/en/aanbod"
     ],
     "Rotterdam Apartments": [
