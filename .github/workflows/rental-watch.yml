@@ -1,0 +1,62 @@
+name: Rental Watch (scheduled)
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # every 5 minutes
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run-watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Install Playwright browsers
+        run: |
+          python -m pip install playwright || true
+          python -m playwright install chromium || true
+
+      - name: Run monitor (single pass)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          WATCH_INTERVAL_SECONDS: ""
+        run: |
+          set -e
+          python -c "import sys; from rental_watch import run_once; sys.exit(run_once())"
+
+      - name: Commit state changes
+        if: always()
+        run: |
+          # Commit and push updated state files back to the repo so subsequent runs see them
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add state.json last_state.json || true
+            git commit -m "Update state from scheduled run" || echo "no changes to commit"
+            git push
+          else
+            echo "no changes"
+          fi
