@@ -171,6 +171,30 @@ SOURCES: list[Source] = [
         listing_href_pattern=re.compile(r"/aanbod.*", re.I),
         fetch_mode="playwright",
     ),
+    Source(
+        name="Pararius Den Haag",
+        url="https://www.pararius.com/apartments/den-haag",
+        listing_href_pattern=re.compile(r"^/(apartments/den-haag/|apartment-for-rent/den-haag/).+", re.I),
+        fetch_mode="playwright",
+    ),
+    Source(
+        name="Funda Den Haag (huur ≤ €1500)",
+        url="https://www.funda.nl/en/zoeken/huur?selected_area=[%22den-haag%22]&price=%220-1500%22",
+        # Match English rent listing pages (e.g. /en/huur/den-haag/... or /en/huur/...)
+        listing_href_pattern=re.compile(r"^/en/huur/.+|^/en/huur-.*|/en/zoeken/huur/.+", re.I),
+        fetch_mode="playwright",
+    ),
+    Source(
+        name="Vesteda The Hague",
+        url=(
+            "https://www.vesteda.com/en/unit-search?placeType=1&sortType=0&radius=10"
+            "&s=The+Hague,+Nederland&sc=woning&latitude=52.0705&longitude=4.30069971"
+            "&filters=&priceFrom=600&priceTo=9999"
+        ),
+        # site is JS-driven; individual unit URLs usually include '/en/units' or '/en/unit'
+        listing_href_pattern=re.compile(r"/en/.+unit[s]?/.*|/en/unit.*", re.I),
+        fetch_mode="playwright",
+    ),
     # Pararius and Funda sources removed per user request
     Source(
         name="Expata",
@@ -268,6 +292,17 @@ def listing_key(href: str) -> str:
     except Exception:
         pass
     if path:
+        # Preserve identifying query parameters for sites that encode listing IDs
+        try:
+            from urllib.parse import parse_qs
+
+            qs = parse_qs(parsed.query or "")
+            for key in ("id", "ref", "listing", "slug"):
+                if key in qs and qs[key]:
+                    val = qs[key][0]
+                    return f"{path}?{key}={val}".lower()
+        except Exception:
+            pass
         return path
     return href.split("#")[0].split("?")[0].rstrip("/").lower()
 
@@ -446,6 +481,24 @@ def extract_listing_hrefs(page_url: str, html: str, source: Source) -> set[str]:
             else:
                 norm = clean.split("?")[0].rstrip("/")
             found.add(norm)
+    # Site-specific cleanup: Pararius tends to expose category/map pages under
+    # /apartments/den-haag/* — filter those out so we keep individual listings.
+    try:
+        if source.name and source.name.lower().startswith("pararius"):
+            cleaned: set[str] = set()
+            for u in found:
+                p = urlparse(u).path or ""
+                seg = p.rstrip("/").split("/")[-1].lower() if p else ""
+                # Ignore listing-like category tokens
+                if seg.startswith("page-") or seg.startswith("city-area") or seg.startswith("district-"):
+                    continue
+                if seg in {"map", "existing-build", "new-construction", "room", "studio", "apartment"}:
+                    continue
+                cleaned.add(u)
+            found = cleaned
+    except Exception:
+        pass
+
     return found
 
 
@@ -712,6 +765,21 @@ def listing_hrefs_for_source(src: Source) -> set[str]:
         found = extract_listing_hrefs(src.url, html, src)
         try:
             found |= _scan_html_for_urls(src.url, html, src)
+        except Exception:
+            pass
+        # Site-specific cleanup for Pararius to remove category/map pages
+        try:
+            if src.name and src.name.lower().startswith("pararius"):
+                cleaned: set[str] = set()
+                for u in found:
+                    p = urlparse(u).path or ""
+                    seg = p.rstrip("/").split("/")[-1].lower() if p else ""
+                    if seg.startswith("page-") or seg.startswith("city-area") or seg.startswith("district-"):
+                        continue
+                    if seg in {"map", "existing-build", "new-construction", "room", "studio", "apartment"}:
+                        continue
+                    cleaned.add(u)
+                found = cleaned
         except Exception:
             pass
         return found

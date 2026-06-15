@@ -65,6 +65,7 @@
       "/en/for-rent/apartment-den-haag/wrightlaan/apartment-2315744",
       "/en/for-rent/apartment-leiden/verbeekstraat/apartment-2379285",
       "/en/for-rent/apartment-rijswijk/jaagpad/apartment-2378282",
+      "/en/for-rent/apartment-wassenaar/rijksstraatweg/apartment-2384408",
       "/en/for-rent/apartment-zoetermeer/streefkerkstraat/apartment-2380479",
       "/en/for-rent/room-netherlands",
       "/en/for-rent/rooms-netherlands"
@@ -83,8 +84,8 @@
       "/en/for-rent/rotterdam/apartment/oudedijk-3183",
       "/en/for-rent/rotterdam/apartment/piekstraat-11671",
       "/en/for-rent/rotterdam/apartment/rosener-manzstraat-8208",
+      "/en/for-rent/rotterdam/apartment/scheepmakerspassage-5375",
       "/en/for-rent/rotterdam/apartment/walenburgerweg-10705",
-      "/en/for-rent/rotterdam/apartment/waterloostraat-11127",
       "/en/for-rent/rotterdam/apartment/wijnbrugstraat-9685",
       "/en/for-rent/rotterdam/family-house/rosier-faassenstraat-9170",
       "/en/for-rent/rotterdam/room/ruwaardstraat-8440",
@@ -289,12 +290,48 @@
     "Rent Valley": [
       "/en/listings/herschelstraat-22-a-den-haag.html",
       "/en/listings/ieplaan-8-c-den-haag.html",
+      "/en/listings/jan-van-nassaustraat-5-bg-vz-den-haag.html",
       "/en/listings/obrechtstraat-376-b-den-haag.html",
       "/en/listings/prins-hendrikstraat-95-den-haag.html",
       "/en/listings/prinsegracht-69-g-den-haag.html",
       "/en/listings/prinsegracht-69-y-den-haag.html",
       "/en/listings/prinsegracht-73-l-den-haag.html",
       "/en/listings/westerbaenstraat-61-d-den-haag.html"
+    ],
+    "Pararius Den Haag": [
+      "/apartments/den-haag/apartment",
+      "/apartments/den-haag/city-area-centrum",
+      "/apartments/den-haag/city-area-escamp",
+      "/apartments/den-haag/city-area-haagse-hout",
+      "/apartments/den-haag/city-area-laak",
+      "/apartments/den-haag/city-area-leidschenveen-ypenburg",
+      "/apartments/den-haag/city-area-loosduinen",
+      "/apartments/den-haag/city-area-scheveningen",
+      "/apartments/den-haag/city-area-segbroek",
+      "/apartments/den-haag/district-belgisch-park",
+      "/apartments/den-haag/district-benoordenhout",
+      "/apartments/den-haag/district-bezuidenhout",
+      "/apartments/den-haag/district-centrum",
+      "/apartments/den-haag/district-duinoord",
+      "/apartments/den-haag/district-geuzen-en-statenkwartier",
+      "/apartments/den-haag/district-laakkwartier-en-spoorwijk",
+      "/apartments/den-haag/district-regentessekwartier",
+      "/apartments/den-haag/district-valkenboskwartier",
+      "/apartments/den-haag/district-zeeheldenkwartier",
+      "/apartments/den-haag/existing-build",
+      "/apartments/den-haag/house",
+      "/apartments/den-haag/map",
+      "/apartments/den-haag/new-construction",
+      "/apartments/den-haag/page-12",
+      "/apartments/den-haag/page-2",
+      "/apartments/den-haag/page-3",
+      "/apartments/den-haag/page-4",
+      "/apartments/den-haag/page-5",
+      "/apartments/den-haag/room",
+      "/apartments/den-haag/studio"
+    ],
+    "Vesteda The Hague": [
+      "/en/unit-search"
     ]
   }
 }
