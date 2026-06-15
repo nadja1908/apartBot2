@@ -95,7 +95,7 @@ jobs:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          WATCH_INTERVAL_SECONDS: ""
+          WATCH_INTERVAL_SECONDS: "300"
         run: |
           set -e
           python -c "import sys; from rental_watch import run_once; sys.exit(run_once())"
