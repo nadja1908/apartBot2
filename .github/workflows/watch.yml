@@ -1,22 +1,21 @@
-name: rental-watch
+name: watch
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '* * * * *'
   workflow_dispatch: {}
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
 
 jobs:
-  run:
+  monitor:
     runs-on: ubuntu-latest
     env:
       PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
-      SCHEDULE_VERSION: "1"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,12 +33,12 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Install Playwright (optional)
+      - name: Install Playwright
         run: |
           python -m pip install playwright || true
           python -m playwright install chromium || true
 
-      - name: Run rental_watch (single run)
+      - name: Run rental_watch
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -48,39 +47,16 @@ jobs:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          WATCH_INTERVAL_SECONDS: "300"
+          WATCH_INTERVAL_SECONDS: "60"
         run: |
           set -e
           python -c "import sys; from rental_watch import run_once; sys.exit(run_once())"
 
-      - name: Record last run timestamp
-        run: |
-          # Write UTC timestamp so we can verify scheduled runs happened
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > last_run.txt || python - <<'PY'
-          from datetime import datetime
-          print(datetime.utcnow().isoformat() + 'Z')
-          PY
-      - name: Upload last_run artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: last_run
-          path: last_run.txt
-
-      - name: Save state files as artifact
-        if: always()
-        run: |
-          # Prepare state files for upload (no commit/push)
-          if [ -f state.json ] || [ -f last_state.json ]; then
-            echo "State files present"
-          else
-            echo "No state files found"
-          fi
-
-      - name: Upload state files
+      - name: Upload state
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: state-files
+          name: state
           path: |
             state.json
             last_state.json
