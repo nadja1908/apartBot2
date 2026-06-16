@@ -2,7 +2,7 @@ name: schedule-echo
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '* * * * *' # every minute
   workflow_dispatch: {}
 
 jobs:
