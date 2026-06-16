@@ -56,9 +56,9 @@ jobs:
         run: |
           # Write UTC timestamp so we can verify scheduled runs happened
           date -u +"%Y-%m-%dT%H:%M:%SZ" > last_run.txt || python - <<'PY'
-from datetime import datetime
-print(datetime.utcnow().isoformat() + 'Z')
-PY
+          from datetime import datetime
+          print(datetime.utcnow().isoformat() + 'Z')
+          PY
       - name: Upload last_run artifact
         uses: actions/upload-artifact@v3
         with:
