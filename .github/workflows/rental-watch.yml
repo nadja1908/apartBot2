@@ -50,6 +50,17 @@ jobs:
           set -e
           python -c "import sys; from rental_watch import run_once; sys.exit(run_once())"
 
+      - name: Record last run timestamp
+        run: |
+          # Write UTC timestamp so we can verify scheduled runs happened
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > last_run.txt || python - <<'PY'
+from datetime import datetime
+print(datetime.utcnow().isoformat() + 'Z')
+PY
+          git add last_run.txt
+          git commit -m "ci: update last_run timestamp" || echo "no changes to commit"
+          git push || echo "git push failed"
+
       - name: Commit state.json if changed
         if: always()
         run: |
