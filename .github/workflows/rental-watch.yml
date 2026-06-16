@@ -2,59 +2,6 @@ name: rental-watch
 
 on:
   schedule:
-    # every 5 minutes
-    - cron: '*/5 * * * *'
-  workflow_dispatch: {}
-
-jobs:
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: true
-
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.12'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          # Playwright optional; safe to try
-          python -m playwright install chromium || true
-
-      - name: Run rental_watch (single run)
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SMTP_HOST: ${{ secrets.SMTP_HOST }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          SMTP_USER: ${{ secrets.SMTP_USER }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
-        run: |
-          # run once; ignore non-zero exit so workflow continues
-          python -c "import rental_watch,sys; sys.exit(rental_watch.run_once())" || true
-
-      - name: Commit state.json if changed
-        run: |
-          git config user.name "rental-watch-bot"
-          git config user.email "action@users.noreply.github.com"
-          if [ -n "$(git status --porcelain)" ]; then
-            git add state.json
-            git commit -m "ci: update state.json (rental-watch)"
-            git push
-          else
-            echo "No changes to commit."
-          fi
-name: Rental Watch (scheduled)
-
-on:
-  schedule:
     - cron: '*/5 * * * *' # every 5 minutes
   workflow_dispatch: {}
 
@@ -62,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  run-watch:
+  run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -81,12 +28,12 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Install Playwright browsers
+      - name: Install Playwright (optional)
         run: |
           python -m pip install playwright || true
           python -m playwright install chromium || true
 
-      - name: Run monitor (single pass)
+      - name: Run rental_watch (single run)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -100,16 +47,15 @@ jobs:
           set -e
           python -c "import sys; from rental_watch import run_once; sys.exit(run_once())"
 
-      - name: Commit state changes
+      - name: Commit state.json if changed
         if: always()
         run: |
-          # Commit and push updated state files back to the repo so subsequent runs see them
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if [ -n "$(git status --porcelain)" ]; then
             git add state.json last_state.json || true
-            git commit -m "Update state from scheduled run" || echo "no changes to commit"
-            git push
+            git commit -m "ci: update state.json (rental-watch)" || echo "no changes to commit"
+            git push || echo "git push failed"
           else
             echo "no changes"
           fi
