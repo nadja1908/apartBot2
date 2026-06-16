@@ -43,6 +43,7 @@
     ],
     "Trechousing Rent": [
       "/en-gb/residential-listings/rent/rotterdam/lambertusstraat/ref-trs91052",
+      "/en-gb/residential-listings/rent/the-hague/2e-sweelinckstraat/ref-trs91036",
       "/en-gb/residential-listings/rent/the-hague/anna-van-buerenplein/267-ref-trs91056",
       "/en-gb/residential-listings/rent/the-hague/bonistraat/ref-trs91048",
       "/en-gb/residential-listings/rent/the-hague/buitenhof/ref-trs91063",
@@ -50,7 +51,6 @@
       "/en-gb/residential-listings/rent/the-hague/lange-beestenmarkt/ref-trs91003",
       "/en-gb/residential-listings/rent/the-hague/mallemolen/ref-trs91065",
       "/en-gb/residential-listings/rent/the-hague/muzenstraat/ref-trs91054",
-      "/en-gb/residential-listings/rent/the-hague/ohmstraat/108",
       "/en-gb/residential-listings/rent/the-hague/suezkade/ref-trs91060",
       "/en-gb/residential-listings/rent/the-hague/vondelstraat/ref-trs91064",
       "/en-gb/residential-listings/rent/the-hague/vondelstraat/ref-trs91067"
@@ -88,11 +88,11 @@
       "/en/for-rent/rotterdam/apartment/bulgersteyn-6987",
       "/en/for-rent/rotterdam/apartment/de-lairesselaan-8845",
       "/en/for-rent/rotterdam/apartment/mauritsweg-9012",
-      "/en/for-rent/rotterdam/apartment/nieuwstraat-10495",
       "/en/for-rent/rotterdam/apartment/oudedijk-3183",
       "/en/for-rent/rotterdam/apartment/piekstraat-11671",
       "/en/for-rent/rotterdam/apartment/rosener-manzstraat-8208",
       "/en/for-rent/rotterdam/apartment/scheepmakerspassage-5375",
+      "/en/for-rent/rotterdam/apartment/stationssingel-7769",
       "/en/for-rent/rotterdam/apartment/walenburgerweg-10705",
       "/en/for-rent/rotterdam/apartment/wijnbrugstraat-9685",
       "/en/for-rent/rotterdam/family-house/rosier-faassenstraat-9170",
@@ -137,7 +137,19 @@
       "/wonen/aanbod/zeesluisweg-60-a-s-gravenhage-se121185"
     ],
     "Karens Real Estate": [
-      "/woningaanbod"
+      "/den-haag-denneweg-h104830262",
+      "/den-haag-dr.-lelykade-h104830069",
+      "/den-haag-elisabeth-brugsmaweg-h104830095",
+      "/den-haag-esperantostraat-h104830263",
+      "/den-haag-goudenregenstraat-h104830264",
+      "/den-haag-groot-hertoginnelaan-h104830222",
+      "/den-haag-groot-hertoginnelaan-h104830252",
+      "/den-haag-laan-van-poot-h104830188",
+      "/den-haag-lange-houtstraat-h104830043",
+      "/den-haag-reinkenstraat-h104830026",
+      "/den-haag-stevinstraat-h104830255",
+      "/den-haag-verseveldtweg-h104830055",
+      "/poeldijk-nieuweweg-h104830250"
     ],
     "WoonCompany": [
       "/woning/den-haag-denneweg-14-g",
