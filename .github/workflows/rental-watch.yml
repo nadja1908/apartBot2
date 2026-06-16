@@ -5,18 +5,20 @@ on:
     branches:
       - main
   schedule:
-    - cron: '* * * * *'
+    - cron: '7/10 * * * *'
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
+concurrency:
+  group: rental-watch
+  cancel-in-progress: false
+
 jobs:
   run:
     runs-on: ubuntu-latest
-    env:
-      PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
-      SCHEDULE_VERSION: "1"
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,62 +27,41 @@ jobs:
           persist-credentials: true
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install -r requirements.txt
 
-      - name: Install Playwright (optional)
+      - name: Install Playwright Chromium
         run: |
-          python -m pip install playwright || true
-          python -m playwright install chromium || true
+          python -m playwright install --with-deps chromium
 
-      - name: Run rental_watch (single run)
+      - name: Run rental_watch single check
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          WATCH_INTERVAL_SECONDS: "300"
         run: |
-          set -e
           python -c "import sys; from rental_watch import run_once; sys.exit(run_once())"
 
       - name: Record last run timestamp
         run: |
-          # Write UTC timestamp so we can verify scheduled runs happened
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > last_run.txt || python - <<'PY'
-          from datetime import datetime
-          print(datetime.utcnow().isoformat() + 'Z')
-          PY
-      - name: Upload last_run artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: last_run
-          path: last_run.txt
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > last_run.txt
 
-      - name: Save state files as artifact
-        if: always()
+      - name: Commit state
         run: |
-          # Prepare state files for upload (no commit/push)
-          if [ -f state.json ] || [ -f last_state.json ]; then
-            echo "State files present"
-          else
-            echo "No state files found"
-          fi
-
-      - name: Upload state files
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: state-files
-          path: |
-            state.json
-            last_state.json
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add state.json last_run.txt
+          git commit -m "Update rental watch state [skip ci]" || echo "No changes"
+          git push
