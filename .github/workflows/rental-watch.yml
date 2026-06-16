@@ -60,7 +60,7 @@ jobs:
           print(datetime.utcnow().isoformat() + 'Z')
           PY
       - name: Upload last_run artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: last_run
           path: last_run.txt
@@ -77,7 +77,7 @@ jobs:
 
       - name: Upload state files
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: state-files
           path: |
