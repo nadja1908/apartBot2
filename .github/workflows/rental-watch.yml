@@ -59,39 +59,18 @@ jobs:
 from datetime import datetime
 print(datetime.utcnow().isoformat() + 'Z')
 PY
-<<<<<<< HEAD
-          git add last_run.txt
-          git commit -m "ci: update last_run timestamp" || echo "no changes to commit"
-          if [ -n "$PUSH_TOKEN" ]; then
-            git remote set-url origin https://x-access-token:${GITHUB_PUSH_TOKEN}@github.com/$GITHUB_REPOSITORY
-          fi
-          git push || echo "git push failed"
-=======
       - name: Upload last_run artifact
         uses: actions/upload-artifact@v3
         with:
           name: last_run
           path: last_run.txt
->>>>>>> 9da5540 (chore: auto-sync 2026-06-16T01:30:47Z)
 
       - name: Save state files as artifact
         if: always()
         run: |
-<<<<<<< HEAD
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain)" ]; then
-            git add state.json last_state.json || true
-            git commit -m "ci: update state.json (rental-watch)" || echo "no changes to commit"
-            if [ -n "$PUSH_TOKEN" ]; then
-              git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/$GITHUB_REPOSITORY
-            fi
-            git push || echo "git push failed"
-=======
           # Prepare state files for upload (no commit/push)
           if [ -f state.json ] || [ -f last_state.json ]; then
             echo "State files present"
->>>>>>> 9da5540 (chore: auto-sync 2026-06-16T01:30:47Z)
           else
             echo "No state files found"
           fi
