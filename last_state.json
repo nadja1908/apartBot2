@@ -15,7 +15,16 @@
       "slug:regentesselaan-185-a",
       "slug:van-der-duynstraat-181"
     ],
-    "Woonzeker Den Haag (filter page 2)": [],
+    "Woonzeker Den Haag (filter page 2)": [
+      "slug:archimedesstraat-62",
+      "slug:beeklaan-343-c",
+      "slug:bosschestraat-136",
+      "slug:dr-lelykade-150",
+      "slug:heemskerckstraat-17-kamer-5",
+      "slug:maystraat-93",
+      "slug:stokroosstraat-237",
+      "slug:vlaskamp-632"
+    ],
     "Rental Rotterdam Den Haag (max €1500)": [
       "/woningaanbod/huur/den-haag/escamplaan/862-w",
       "/woningaanbod/huur/den-haag/laakweg/25-k",
