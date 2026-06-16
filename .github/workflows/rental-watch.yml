@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
+      SCHEDULE_VERSION: "1"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
