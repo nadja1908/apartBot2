@@ -14,6 +14,8 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_PUSH_TOKEN: ${{ secrets.GITHUB_PUSH_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -59,6 +61,9 @@ print(datetime.utcnow().isoformat() + 'Z')
 PY
           git add last_run.txt
           git commit -m "ci: update last_run timestamp" || echo "no changes to commit"
+          if [ -n "$GITHUB_PUSH_TOKEN" ]; then
+            git remote set-url origin https://x-access-token:${GITHUB_PUSH_TOKEN}@github.com/$GITHUB_REPOSITORY
+          fi
           git push || echo "git push failed"
 
       - name: Commit state.json if changed
@@ -69,6 +74,9 @@ PY
           if [ -n "$(git status --porcelain)" ]; then
             git add state.json last_state.json || true
             git commit -m "ci: update state.json (rental-watch)" || echo "no changes to commit"
+            if [ -n "$GITHUB_PUSH_TOKEN" ]; then
+              git remote set-url origin https://x-access-token:${GITHUB_PUSH_TOKEN}@github.com/$GITHUB_REPOSITORY
+            fi
             git push || echo "git push failed"
           else
             echo "no changes"
