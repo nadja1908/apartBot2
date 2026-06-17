@@ -40,51 +40,11 @@ jobs:
         run: |
           python -m playwright install --with-deps chromium
 
-      - name: Debug Telegram
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
-        run: |
-          python - <<'PY'
-          import os
-          import httpx
-
-          token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
-          chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-
-          print("TOKEN POSTOJI:", bool(token))
-          print("CHAT_ID POSTOJI:", bool(chat_id))
-          print("CHAT_ID VREDNOST:", chat_id if chat_id else "NEMA")
-
-          if not token or not chat_id:
-              raise SystemExit("Fale TELEGRAM_BOT_TOKEN ili TELEGRAM_CHAT_ID.")
-
-          r = httpx.get(
-              f"https://api.telegram.org/bot{token}/getMe",
-              timeout=30
-          )
-          print("getMe status:", r.status_code)
-          print("getMe odgovor:", r.text)
-
-          r = httpx.post(
-              f"https://api.telegram.org/bot{token}/sendMessage",
-              json={
-                  "chat_id": chat_id,
-                  "text": "Test iz GitHub Actions — Telegram radi.",
-              },
-              timeout=30
-          )
-          print("sendMessage status:", r.status_code)
-          print("sendMessage odgovor:", r.text)
-
-          if r.status_code >= 400:
-              raise SystemExit("Telegram slanje nije uspelo.")
-          PY
-
       - name: Run rental_watch single check
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+          TELEGRAM_NOTIFY_NO_NEW: "1"
 
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
