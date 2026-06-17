@@ -64,12 +64,24 @@
       "/en/for-rent/apartment-leiden/verbeekstraat/apartment-2379285",
       "/en/for-rent/apartment-rijswijk/jaagpad/apartment-2378282",
       "/en/for-rent/apartment-wassenaar/rijksstraatweg/apartment-2384408",
-      "/en/for-rent/apartment-zoetermeer/maria-van-oosterwijckstraat/apartment-2385170",
       "/en/for-rent/apartment-zoetermeer/streefkerkstraat/apartment-2380479",
       "/en/for-rent/room-netherlands",
       "/en/for-rent/rooms-netherlands"
     ],
-    "Immovita": [],
+    "Immovita": [
+      "/aanbod",
+      "/aanbod/woning?id=6047",
+      "/aanbod/woning?id=6394",
+      "/aanbod/woning?id=6395",
+      "/aanbod/woning?id=6398",
+      "/aanbod/woning?id=6409",
+      "/aanbod/woning?id=6413",
+      "/aanbod/woning?id=6415",
+      "/aanbod/woning?id=6417",
+      "/aanbod/woning?id=6419",
+      "/aanbod/woning?id=6421",
+      "/en/aanbod"
+    ],
     "Rotterdam Apartments": [
       "/en/for-rent/hellevoetssluis/family-house/komeet-11265",
       "/en/for-rent/rotterdam/apartment/baan-11538",
