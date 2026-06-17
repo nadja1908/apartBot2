@@ -40,6 +40,13 @@ jobs:
         run: |
           python -m playwright install --with-deps chromium
 
+      - name: Test Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python rental_watch.py --test-telegram
+
       - name: Run rental_watch single check
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -58,10 +65,31 @@ jobs:
         run: |
           date -u +"%Y-%m-%dT%H:%M:%SZ" > last_run.txt
 
+      - name: Show state after run
+        if: always()
+        run: |
+          echo "=== state.json ==="
+          cat state.json || echo "state.json ne postoji"
+
       - name: Commit state
+        if: always()
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add state.json last_run.txt
-          git commit -m "Update rental watch state [skip ci]" || echo "No changes"
-          git push
+
+          git add -f last_run.txt
+
+          if [ -f state.json ]; then
+            git add -f state.json
+          fi
+
+          if [ -f last_state.json ]; then
+            git add -f last_state.json
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update rental watch state [skip ci]"
+            git push
+          fi
