@@ -68,22 +68,35 @@
       "/en/for-rent/room-netherlands",
       "/en/for-rent/rooms-netherlands"
     ],
-    "Immovita": [],
+    "Immovita": [
+      "/aanbod",
+      "/aanbod/woning?id=6047",
+      "/aanbod/woning?id=6394",
+      "/aanbod/woning?id=6395",
+      "/aanbod/woning?id=6398",
+      "/aanbod/woning?id=6409",
+      "/aanbod/woning?id=6413",
+      "/aanbod/woning?id=6415",
+      "/aanbod/woning?id=6417",
+      "/aanbod/woning?id=6419",
+      "/aanbod/woning?id=6421",
+      "/en/aanbod"
+    ],
     "Rotterdam Apartments": [
       "/en/for-rent/hellevoetssluis/family-house/komeet-11265",
       "/en/for-rent/rotterdam/apartment/baan-11538",
       "/en/for-rent/rotterdam/apartment/bulgersteyn-6987",
       "/en/for-rent/rotterdam/apartment/de-lairesselaan-8845",
-      "/en/for-rent/rotterdam/apartment/mauritsweg-9012",
+      "/en/for-rent/rotterdam/apartment/nolensstraat-11141",
       "/en/for-rent/rotterdam/apartment/oudedijk-10318",
       "/en/for-rent/rotterdam/apartment/piekstraat-11671",
       "/en/for-rent/rotterdam/apartment/rosener-manzstraat-8208",
       "/en/for-rent/rotterdam/apartment/scheepmakerspassage-5375",
+      "/en/for-rent/rotterdam/apartment/stationssingel-7768",
       "/en/for-rent/rotterdam/apartment/stationssingel-7769",
       "/en/for-rent/rotterdam/apartment/walenburgerweg-10705",
       "/en/for-rent/rotterdam/apartment/wijnbrugstraat-9685",
       "/en/for-rent/rotterdam/family-house/rosier-faassenstraat-9170",
-      "/en/for-rent/rotterdam/room/ruwaardstraat-8440",
       "/en/for-rent/rotterdam/studio/ruwaardstraat-8450"
     ],
     "Avenir Vastgoed": [
