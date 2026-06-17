@@ -43,7 +43,7 @@ jobs:
       - name: Debug Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
         run: |
           python - <<'PY'
           import os
@@ -57,7 +57,7 @@ jobs:
           print("CHAT_ID VREDNOST:", chat_id if chat_id else "NEMA")
 
           if not token or not chat_id:
-              raise SystemExit("Fale TELEGRAM_BOT_TOKEN ili TELEGRAM_CHAT_ID u GitHub Secrets.")
+              raise SystemExit("Fale TELEGRAM_BOT_TOKEN ili TELEGRAM_CHAT_ID.")
 
           r = httpx.get(
               f"https://api.telegram.org/bot{token}/getMe",
@@ -84,7 +84,7 @@ jobs:
       - name: Run rental_watch single check
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
 
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
