@@ -44,7 +44,6 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
-          TELEGRAM_NOTIFY_NO_NEW: "1"
 
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
@@ -54,6 +53,48 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: |
           python -c "import sys; from rental_watch import run_once; sys.exit(run_once())"
+
+      - name: Send no-new heartbeat
+        if: success()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os
+          import httpx
+          from datetime import datetime, timezone
+
+          token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+          chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+
+          if not token or not chat_id:
+              raise SystemExit("Fale TELEGRAM_BOT_TOKEN ili TELEGRAM_CHAT_ID.")
+
+          now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+          text = (
+              "Rent monitor: provera završena.\n"
+              "Ako pre ove poruke nije stigao listing, trenutno nema novih oglasa.\n\n"
+              f"Vreme provere: {now}"
+          )
+
+          r = httpx.post(
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              json={
+                  "chat_id": chat_id,
+                  "text": text,
+                  "disable_web_page_preview": True,
+              },
+              timeout=30,
+          )
+
+          print("Telegram heartbeat status:", r.status_code)
+          print("Telegram heartbeat odgovor:", r.text)
+
+          if r.status_code >= 400:
+              raise SystemExit("Heartbeat Telegram poruka nije poslata.")
+          PY
 
       - name: Record last run timestamp
         run: |
