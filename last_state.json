@@ -90,11 +90,11 @@
       "/aanbod/woning?id=6419",
       "/aanbod/woning?id=6421",
       "/aanbod/woning?id=6422",
+      "/aanbod/woning?id=6424",
       "/en/aanbod"
     ],
     "Rotterdam Apartments": [
       "/en/for-rent/dordrecht/apartment/admiraalsplein-11676",
-      "/en/for-rent/hellevoetssluis/family-house/komeet-11265",
       "/en/for-rent/rotterdam/apartment/baan-11538",
       "/en/for-rent/rotterdam/apartment/beatrijsstraat-11474",
       "/en/for-rent/rotterdam/apartment/bulgersteyn-6987",
@@ -107,6 +107,7 @@
       "/en/for-rent/rotterdam/apartment/schiehavenkade-11077",
       "/en/for-rent/rotterdam/apartment/statenweg-11656",
       "/en/for-rent/rotterdam/apartment/walenburgerweg-10705",
+      "/en/for-rent/rotterdam/apartment/wijnbrugstraat-9685",
       "/en/for-rent/rotterdam/studio/ruwaardstraat-8450"
     ],
     "Avenir Vastgoed": [
@@ -309,9 +310,7 @@
       "/en/listings/jan-van-nassaustraat-5-bg-vz-den-haag.html",
       "/en/listings/obrechtstraat-376-b-den-haag.html",
       "/en/listings/prins-hendrikstraat-95-den-haag.html",
-      "/en/listings/prinsegracht-69-y-den-haag.html",
-      "/en/listings/prinsegracht-73-l-den-haag.html",
-      "/en/listings/westerbaenstraat-61-d-den-haag.html"
+      "/en/listings/prinsegracht-73-l-den-haag.html"
     ],
     "Pararius Den Haag": [
       "/apartment-for-rent/den-haag/0685b5d4/troelstrakade",
@@ -323,6 +322,7 @@
       "/apartment-for-rent/den-haag/315c9cb3/molenstraat",
       "/apartment-for-rent/den-haag/49fda78e/laan-copes-van-cattenburch",
       "/apartment-for-rent/den-haag/5d6b14ff/lange-beestenmarkt",
+      "/apartment-for-rent/den-haag/60e09a4f/loudonstraat",
       "/apartment-for-rent/den-haag/63c252f1/waalsdorperweg",
       "/apartment-for-rent/den-haag/6fcc60fc/bentinckstraat",
       "/apartment-for-rent/den-haag/7842248d/leuvensestraat",
@@ -338,7 +338,6 @@
       "/apartment-for-rent/den-haag/dfea6a5f/vondelstraat",
       "/apartment-for-rent/den-haag/e330384e/weissenbruchstraat",
       "/apartment-for-rent/den-haag/e4129368/nobelstraat",
-      "/apartment-for-rent/den-haag/e89c9c84/newtonstraat",
       "/apartment-for-rent/den-haag/f8e7039c/damasstraat",
       "/apartment-for-rent/den-haag/fd7924ff/gevers-deynootweg",
       "/apartments/den-haag/house"
