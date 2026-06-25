@@ -91,6 +91,7 @@
       "/aanbod/woning?id=6422",
       "/aanbod/woning?id=6424",
       "/aanbod/woning?id=6426",
+      "/aanbod/woning?id=6428",
       "/en/aanbod"
     ],
     "Rotterdam Apartments": [
@@ -319,7 +320,6 @@
       "/apartment-for-rent/den-haag/14aca041/johannes-camphuijsstraat",
       "/apartment-for-rent/den-haag/2ca3b398/laan-van-meerdervoort",
       "/apartment-for-rent/den-haag/2d8f61ef/oostduinplein",
-      "/apartment-for-rent/den-haag/49fda78e/laan-copes-van-cattenburch",
       "/apartment-for-rent/den-haag/4a5ca906/jan-van-nassaustraat",
       "/apartment-for-rent/den-haag/50f9dada/juliana-van-stolberglaan",
       "/apartment-for-rent/den-haag/57afaa1f/carnegielaan",
@@ -334,6 +334,7 @@
       "/apartment-for-rent/den-haag/a320c2fa/dr-lelykade",
       "/apartment-for-rent/den-haag/b6c6fb57/kasteellaan",
       "/apartment-for-rent/den-haag/b81dbb24/leyweg",
+      "/apartment-for-rent/den-haag/c963996e/trompstraat",
       "/apartment-for-rent/den-haag/d275cd14/valkenboslaan",
       "/apartment-for-rent/den-haag/d591224c/riouwstraat",
       "/apartment-for-rent/den-haag/d6b8642f/kasteellaan",
