@@ -74,13 +74,11 @@
     "Immovita": [
       "/aanbod",
       "/aanbod/woning?id=6047",
-      "/aanbod/woning?id=6394",
       "/aanbod/woning?id=6395",
       "/aanbod/woning?id=6398",
       "/aanbod/woning?id=6409",
       "/aanbod/woning?id=6413",
       "/aanbod/woning?id=6415",
-      "/aanbod/woning?id=6417",
       "/aanbod/woning?id=6419",
       "/aanbod/woning?id=6422",
       "/aanbod/woning?id=6424",
@@ -92,7 +90,6 @@
     "Rotterdam Apartments": [
       "/en/for-rent/dordrecht/apartment/admiraalsplein-11676",
       "/en/for-rent/dordrecht/family-house/aletta-jacobs-erf-10906",
-      "/en/for-rent/rotterdam/apartment/beatrijsstraat-11474",
       "/en/for-rent/rotterdam/apartment/coolhaven-5260",
       "/en/for-rent/rotterdam/apartment/goudsesingel-11194",
       "/en/for-rent/rotterdam/apartment/havenstraat-5194",
@@ -104,7 +101,8 @@
       "/en/for-rent/rotterdam/apartment/rosestraat-11343",
       "/en/for-rent/rotterdam/apartment/schapendreef-11322",
       "/en/for-rent/rotterdam/apartment/schiehavenkade-11077",
-      "/en/for-rent/rotterdam/apartment/wijnbrugstraat-10656"
+      "/en/for-rent/rotterdam/apartment/wijnbrugstraat-10656",
+      "/en/for-rent/rotterdam/apartment/wijnbrugstraat-9441"
     ],
     "Avenir Vastgoed": [
       "/aanbod/aangekocht",
@@ -329,7 +327,7 @@
       "/apartment-for-rent/den-haag/864bab96/molenstraat",
       "/apartment-for-rent/den-haag/8e843340/anna-paulownaplein",
       "/apartment-for-rent/den-haag/904d0016/stortenbekerstraat",
-      "/apartment-for-rent/den-haag/971e0819/lijsterbesplein",
+      "/apartment-for-rent/den-haag/ab0f7f86/suzannaland",
       "/apartment-for-rent/den-haag/da6a3538/weissenbruchstraat",
       "/apartment-for-rent/den-haag/dfdef754/beeklaan",
       "/apartment-for-rent/den-haag/e4c5f63c/nassauplein",
