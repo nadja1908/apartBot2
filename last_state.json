@@ -92,7 +92,6 @@
     "Rotterdam Apartments": [
       "/en/for-rent/dordrecht/apartment/admiraalsplein-11676",
       "/en/for-rent/dordrecht/family-house/aletta-jacobs-erf-10906",
-      "/en/for-rent/rotterdam/apartment/baan-11538",
       "/en/for-rent/rotterdam/apartment/beatrijsstraat-11474",
       "/en/for-rent/rotterdam/apartment/coolhaven-5260",
       "/en/for-rent/rotterdam/apartment/goudsesingel-11194",
@@ -104,7 +103,8 @@
       "/en/for-rent/rotterdam/apartment/mariniersweg-10926",
       "/en/for-rent/rotterdam/apartment/rosestraat-11343",
       "/en/for-rent/rotterdam/apartment/schapendreef-11322",
-      "/en/for-rent/rotterdam/apartment/schiehavenkade-11077"
+      "/en/for-rent/rotterdam/apartment/schiehavenkade-11077",
+      "/en/for-rent/rotterdam/apartment/wijnbrugstraat-10656"
     ],
     "Avenir Vastgoed": [
       "/aanbod/aangekocht",
@@ -307,6 +307,7 @@
       "/en/listings/hugo-de-grootstraat-21-b-den-haag.html",
       "/en/listings/obrechtstraat-376-b-den-haag.html",
       "/en/listings/prins-hendrikstraat-95-den-haag.html",
+      "/en/listings/prins-mauritslaan-71-b-den-haag.html",
       "/en/listings/prinsegracht-73-l-den-haag.html",
       "/en/listings/van-der-kunstraat-12-den-haag.html"
     ],
