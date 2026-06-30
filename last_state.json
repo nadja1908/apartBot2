@@ -276,6 +276,7 @@
       "/den-haag-prinsestraat-h104800062",
       "/den-haag-prinsestraat-h104800064",
       "/den-haag-prinsestraat-h104800065",
+      "/den-haag-prinsestraat-h104800068",
       "/den-haag-prinsestraat-h104800104",
       "/den-haag-soestdijksekade-h104800028",
       "/den-haag-van-zeggelenlaan-h104800094",
@@ -291,7 +292,6 @@
       "/s-gravenhage-beeklaan-h104800007",
       "/s-gravenhage-fahrenheitstraat-h104800018",
       "/s-gravenhage-lauwersstraat-h104800071",
-      "/s-gravenhage-prinsestraat-h104800068",
       "/s-gravenhage-prinsestraat-h104800070",
       "/voorburg-van-arembergelaan-h104800081",
       "/willemstad-oranjestraat-h104800092"
@@ -315,7 +315,6 @@
     "Pararius Den Haag": [
       "/apartment-for-rent/den-haag/041a3c8e/herderstraat",
       "/apartment-for-rent/den-haag/0533b37c/hugo-de-grootstraat",
-      "/apartment-for-rent/den-haag/0cf17422/ridderlaan",
       "/apartment-for-rent/den-haag/15821251/apeldoornselaan",
       "/apartment-for-rent/den-haag/319a38d6/1e-van-der-kunstraat",
       "/apartment-for-rent/den-haag/3962bf71/nicolaas-tulpstraat",
@@ -332,6 +331,7 @@
       "/apartment-for-rent/den-haag/904d0016/stortenbekerstraat",
       "/apartment-for-rent/den-haag/971e0819/lijsterbesplein",
       "/apartment-for-rent/den-haag/da6a3538/weissenbruchstraat",
+      "/apartment-for-rent/den-haag/dfdef754/beeklaan",
       "/apartment-for-rent/den-haag/e4c5f63c/nassauplein",
       "/apartments/den-haag/house"
     ],
