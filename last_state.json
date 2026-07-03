@@ -31,8 +31,7 @@
     ],
     "Rental Rotterdam Den Haag (max €1500)": [
       "/woningaanbod/huur/den-haag/escamplaan/862-w",
-      "/woningaanbod/huur/den-haag/laakweg/21-k",
-      "/woningaanbod/huur/den-haag/laakweg/25-k"
+      "/woningaanbod/huur/den-haag/laakweg/21-k"
     ],
     "HAYMAN Rentals": [
       "/aanbod/columbusstraat",
@@ -315,10 +314,15 @@
       "/en/listings/van-der-kunstraat-12-den-haag.html"
     ],
     "Pararius Den Haag": [
+      "/apartment-for-rent/den-haag/253483d7/paets-van-troostwijkstraat",
       "/apartment-for-rent/den-haag/283c6a12/bazarstraat",
+      "/apartment-for-rent/den-haag/3b0bde3a/bragastraat",
       "/apartment-for-rent/den-haag/41070731/noordeinde",
       "/apartment-for-rent/den-haag/4267a9c4/denneweg",
+      "/apartment-for-rent/den-haag/5662a54b/nassauplein",
+      "/apartment-for-rent/den-haag/7094f3a3/eisenhowerlaan",
       "/apartment-for-rent/den-haag/74d5b57a/daguerrestraat",
+      "/apartment-for-rent/den-haag/7ad12a5b/balistraat",
       "/apartment-for-rent/den-haag/82be873a/zusterstraat",
       "/apartment-for-rent/den-haag/94ca02e7/hanedoesstraat",
       "/apartment-for-rent/den-haag/97aea6c8/celsiusstraat",
@@ -330,6 +334,7 @@
       "/apartment-for-rent/den-haag/c2190122/mezenlaan",
       "/apartment-for-rent/den-haag/c38846e2/bazarstraat",
       "/apartment-for-rent/den-haag/c76b9895/1e-lulofsdwarsstraat",
+      "/apartment-for-rent/den-haag/c7f8990b/balistraat",
       "/apartment-for-rent/den-haag/ca3b5a88/vondelstraat",
       "/apartment-for-rent/den-haag/cec0835e/cornelis-de-wittlaan",
       "/apartment-for-rent/den-haag/d37ea6f3/escamplaan",
