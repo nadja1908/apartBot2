@@ -48,7 +48,6 @@
     "Trechousing Rent": [
       "/en-gb/residential-listings/rent/rotterdam/lambertusstraat/ref-trs91052",
       "/en-gb/residential-listings/rent/the-hague/anna-van-buerenplein/267-ref-trs91056",
-      "/en-gb/residential-listings/rent/the-hague/bonistraat/ref-trs91048",
       "/en-gb/residential-listings/rent/the-hague/buitenhof/ref-trs91063",
       "/en-gb/residential-listings/rent/the-hague/herderslaan/ref-trs91058",
       "/en-gb/residential-listings/rent/the-hague/hoogstraat/ref-trs91069",
@@ -57,6 +56,7 @@
       "/en-gb/residential-listings/rent/the-hague/muzenstraat/ref-trs91054",
       "/en-gb/residential-listings/rent/the-hague/regentesselaan/ref-trs91072",
       "/en-gb/residential-listings/rent/the-hague/suezkade/ref-trs91060",
+      "/en-gb/residential-listings/rent/the-hague/vondelstraat/ref-trs91075",
       "/en-gb/residential-listings/rent/the-hague/witte-de-withstraat/ref-trs91074"
     ],
     "Kamernet Den Haag": [
@@ -302,6 +302,7 @@
     "Funda Delft (koop)": [],
     "Rent Valley": [
       "/en/listings/1e-van-der-kunstraat-51-den-haag.html",
+      "/en/listings/de-perponcherstraat-78-d-den-haag.html",
       "/en/listings/esdoornstraat-109-ivz-den-haag.html",
       "/en/listings/herderstraat-22-den-haag.html",
       "/en/listings/herschelstraat-22-a-den-haag.html",
@@ -319,7 +320,6 @@
       "/apartment-for-rent/den-haag/3b0bde3a/bragastraat",
       "/apartment-for-rent/den-haag/41070731/noordeinde",
       "/apartment-for-rent/den-haag/5662a54b/nassauplein",
-      "/apartment-for-rent/den-haag/5f9856aa/prinsegracht",
       "/apartment-for-rent/den-haag/7094f3a3/eisenhowerlaan",
       "/apartment-for-rent/den-haag/785b6a69/noordeinde",
       "/apartment-for-rent/den-haag/7ad12a5b/balistraat",
@@ -329,14 +329,15 @@
       "/apartment-for-rent/den-haag/a276e72a/godetiaweg",
       "/apartment-for-rent/den-haag/b6424c99/celsiusstraat",
       "/apartment-for-rent/den-haag/b89fd692/van-musschenbroekstraat",
+      "/apartment-for-rent/den-haag/bb295d33/de-perponcherstraat",
       "/apartment-for-rent/den-haag/c76b9895/1e-lulofsdwarsstraat",
       "/apartment-for-rent/den-haag/c7f8990b/balistraat",
+      "/apartment-for-rent/den-haag/ca3b5a88/vondelstraat",
       "/apartment-for-rent/den-haag/cab88a9c/bezuidenhoutseweg",
       "/apartment-for-rent/den-haag/cc09f009/1e-lulofsdwarsstraat",
       "/apartment-for-rent/den-haag/cec0835e/cornelis-de-wittlaan",
       "/apartment-for-rent/den-haag/d337f0b8/esperantostraat",
       "/apartment-for-rent/den-haag/d37ea6f3/escamplaan",
-      "/apartment-for-rent/den-haag/d81be137/noordeinde",
       "/apartment-for-rent/den-haag/e4c9543b/witte-de-withstraat",
       "/apartment-for-rent/den-haag/ebd87094/van-boecopkade",
       "/apartment-for-rent/den-haag/f19497d4/loosduinse-uitleg",
