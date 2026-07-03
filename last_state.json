@@ -18,6 +18,7 @@
     "Woonzeker Den Haag (filter page 2)": [
       "slug:bilthovenselaan-40",
       "slug:bosschestraat-136",
+      "slug:carnegielaan-78",
       "slug:dr-lelykade-150",
       "slug:frederik-hendriklaan-184-b",
       "slug:noord-west-buitensingel-5",
@@ -26,7 +27,6 @@
       "slug:regentesselaan-185-a",
       "slug:soestdijksekade-226-kamer-1",
       "slug:stokroosstraat-237",
-      "slug:troelstrakade-253",
       "slug:vlaskamp-632"
     ],
     "Rental Rotterdam Den Haag (max €1500)": [
@@ -46,8 +46,8 @@
       "/aanbod/weimarstraat"
     ],
     "Trechousing Rent": [
-      "/en-gb/residential-listings/rent/rotterdam/lambertusstraat/ref-trs91052",
       "/en-gb/residential-listings/rent/the-hague/anna-van-buerenplein/267-ref-trs91056",
+      "/en-gb/residential-listings/rent/the-hague/beeklaan/ref-trs91076",
       "/en-gb/residential-listings/rent/the-hague/buitenhof/ref-trs91063",
       "/en-gb/residential-listings/rent/the-hague/herderslaan/ref-trs91058",
       "/en-gb/residential-listings/rent/the-hague/hoogstraat/ref-trs91069",
@@ -316,13 +316,9 @@
     ],
     "Pararius Den Haag": [
       "/apartment-for-rent/den-haag/253483d7/paets-van-troostwijkstraat",
-      "/apartment-for-rent/den-haag/3687942a/kettingstraat",
-      "/apartment-for-rent/den-haag/3b0bde3a/bragastraat",
       "/apartment-for-rent/den-haag/41070731/noordeinde",
       "/apartment-for-rent/den-haag/5662a54b/nassauplein",
-      "/apartment-for-rent/den-haag/7094f3a3/eisenhowerlaan",
-      "/apartment-for-rent/den-haag/785b6a69/noordeinde",
-      "/apartment-for-rent/den-haag/7ad12a5b/balistraat",
+      "/apartment-for-rent/den-haag/74d5b57a/daguerrestraat",
       "/apartment-for-rent/den-haag/82be873a/zusterstraat",
       "/apartment-for-rent/den-haag/94ca02e7/hanedoesstraat",
       "/apartment-for-rent/den-haag/97aea6c8/celsiusstraat",
@@ -333,16 +329,13 @@
       "/apartment-for-rent/den-haag/c76b9895/1e-lulofsdwarsstraat",
       "/apartment-for-rent/den-haag/c7f8990b/balistraat",
       "/apartment-for-rent/den-haag/ca3b5a88/vondelstraat",
-      "/apartment-for-rent/den-haag/cab88a9c/bezuidenhoutseweg",
       "/apartment-for-rent/den-haag/cc09f009/1e-lulofsdwarsstraat",
       "/apartment-for-rent/den-haag/cec0835e/cornelis-de-wittlaan",
-      "/apartment-for-rent/den-haag/d337f0b8/esperantostraat",
       "/apartment-for-rent/den-haag/d37ea6f3/escamplaan",
-      "/apartment-for-rent/den-haag/e4c9543b/witte-de-withstraat",
       "/apartment-for-rent/den-haag/ebd87094/van-boecopkade",
-      "/apartment-for-rent/den-haag/f19497d4/loosduinse-uitleg",
       "/apartment-for-rent/den-haag/f5915d10/esdoornstraat",
       "/apartment-for-rent/den-haag/fa31f9e5/granaathorst",
+      "/apartment-for-rent/den-haag/fa4cbd8f/beeklaan",
       "/apartments/den-haag/house"
     ],
     "Vesteda The Hague": [
