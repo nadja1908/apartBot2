@@ -18,7 +18,6 @@
     "Woonzeker Den Haag (filter page 2)": [
       "slug:bilthovenselaan-40",
       "slug:bosschestraat-136",
-      "slug:carnegielaan-78",
       "slug:dr-lelykade-150",
       "slug:frederik-hendriklaan-184-b",
       "slug:noord-west-buitensingel-5",
@@ -27,7 +26,8 @@
       "slug:regentesselaan-185-a",
       "slug:soestdijksekade-226-kamer-1",
       "slug:stokroosstraat-237",
-      "slug:troelstrakade-253"
+      "slug:troelstrakade-253",
+      "slug:valkenboslaan-79-3e-etage"
     ],
     "Rental Rotterdam Den Haag (max €1500)": [
       "/woningaanbod/huur/den-haag/escamplaan/862-w",
@@ -88,7 +88,6 @@
       "/en/for-rent/dordrecht/family-house/aletta-jacobs-erf-10906",
       "/en/for-rent/rotterdam/apartment/bulgersteyn-6987",
       "/en/for-rent/rotterdam/apartment/coolhaven-5260",
-      "/en/for-rent/rotterdam/apartment/de-lairesselaan-8845",
       "/en/for-rent/rotterdam/apartment/goudsesingel-11194",
       "/en/for-rent/rotterdam/apartment/granadoslaan-11259",
       "/en/for-rent/rotterdam/apartment/havenstraat-5194",
@@ -97,9 +96,10 @@
       "/en/for-rent/rotterdam/apartment/mariniersweg-10926",
       "/en/for-rent/rotterdam/apartment/rosestraat-11343",
       "/en/for-rent/rotterdam/apartment/schapendreef-11322",
-      "/en/for-rent/rotterdam/apartment/scheepmakerspassage-11667",
+      "/en/for-rent/rotterdam/apartment/vondelweg-11682",
       "/en/for-rent/rotterdam/apartment/wijnbrugstraat-10656",
-      "/en/for-rent/rotterdam/apartment/wijnbrugstraat-9441"
+      "/en/for-rent/rotterdam/apartment/wijnbrugstraat-9441",
+      "/en/for-rent/rotterdam/apartment/wijnkade-10491"
     ],
     "Avenir Vastgoed": [
       "/aanbod/aangekocht",
@@ -226,13 +226,13 @@
       "/apartment-for-rent/den-haag/283c6a12/bazarstraat",
       "/apartment-for-rent/den-haag/31a7158f/2e-schuytstraat",
       "/apartment-for-rent/den-haag/34cd89f8/valkenboskade",
+      "/apartment-for-rent/den-haag/3da8f939/noordeinde",
       "/apartment-for-rent/den-haag/4267a9c4/denneweg",
       "/apartment-for-rent/den-haag/74d5b57a/daguerrestraat",
       "/apartment-for-rent/den-haag/8227bb1c/zeestraat",
       "/apartment-for-rent/den-haag/866cbd43/vrederustlaan",
       "/apartment-for-rent/den-haag/94ca02e7/hanedoesstraat",
       "/apartment-for-rent/den-haag/b441c142/valkenboskade",
-      "/apartment-for-rent/den-haag/b89fd692/van-musschenbroekstraat",
       "/apartment-for-rent/den-haag/bb295d33/de-perponcherstraat",
       "/apartment-for-rent/den-haag/bd2ff57a/goeverneurlaan",
       "/apartment-for-rent/den-haag/c2190122/mezenlaan",
