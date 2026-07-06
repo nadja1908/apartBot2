@@ -7,8 +7,8 @@
       "slug:edisonstraat-32-c",
       "slug:frederik-hendriklaan-184-b",
       "slug:herschelstraat-24-b",
+      "slug:kepplerstraat-249-b",
       "slug:kepplerstraat-249-c",
-      "slug:loosduinseweg-873",
       "slug:pasteurstraat-150",
       "slug:regentesselaan-161-d",
       "slug:regentesselaan-183",
@@ -27,7 +27,7 @@
       "slug:regentesselaan-185-a",
       "slug:soestdijksekade-226-kamer-1",
       "slug:stokroosstraat-237",
-      "slug:vlaskamp-632"
+      "slug:troelstrakade-253"
     ],
     "Rental Rotterdam Den Haag (max €1500)": [
       "/woningaanbod/huur/den-haag/escamplaan/862-w",
@@ -63,7 +63,7 @@
       "/en/for-rent/apartment-den-haag",
       "/en/for-rent/apartment-den-haag/de-carpentierstraat/apartment-2388895",
       "/en/for-rent/apartment-den-haag/goeverneurlaan/apartment-2382481",
-      "/en/for-rent/apartment-den-haag/wrightlaan/apartment-2390002",
+      "/en/for-rent/apartment-den-haag/van-musschenbroekstraat/apartment-2390429",
       "/en/for-rent/apartment-schiedam/s-gravelandseweg/apartment-2387005",
       "/en/for-rent/room-netherlands",
       "/en/for-rent/rooms-netherlands"
@@ -134,8 +134,7 @@
       "/wonen/aanbod/theresiastraat-395-s-gravenhage-se120919",
       "/wonen/aanbod/vrederustlaan-435-s-gravenhage-se121639",
       "/wonen/aanbod/zeesluisweg-46-b-s-gravenhage-se121321",
-      "/wonen/aanbod/zeesluisweg-48-a-s-gravenhage-se121481",
-      "/wonen/aanbod/zeesluisweg-50-a-s-gravenhage-se121184"
+      "/wonen/aanbod/zeesluisweg-48-a-s-gravenhage-se121481"
     ],
     "Karens Real Estate": [
       "/den-haag-denneweg-h104830262",
@@ -156,7 +155,6 @@
     "WoonCompany": [
       "/woning/den-haag-denneweg-14-g",
       "/woning/den-haag-laan-van-meerdervoort-33",
-      "/woning/den-haag-maarsbergenstraat-165-a",
       "/woning/den-haag-noordeinde-124-d",
       "/woning/den-haag-noordwal-41",
       "/woning/den-haag-weimarstraat",
@@ -218,32 +216,31 @@
       "/en/listings/prins-hendrikstraat-95-den-haag.html",
       "/en/listings/prins-mauritslaan-71-b-den-haag.html",
       "/en/listings/prinsegracht-69-s-den-haag.html",
+      "/en/listings/prinsegracht-73-k-den-haag.html",
       "/en/listings/prinsegracht-73-l-den-haag.html",
       "/en/listings/van-der-kunstraat-12-den-haag.html"
     ],
     "Pararius Den Haag": [
+      "/apartment-for-rent/den-haag/0a132eff/kepplerstraat",
+      "/apartment-for-rent/den-haag/1483db8e/noordeinde",
       "/apartment-for-rent/den-haag/283c6a12/bazarstraat",
       "/apartment-for-rent/den-haag/31a7158f/2e-schuytstraat",
+      "/apartment-for-rent/den-haag/34cd89f8/valkenboskade",
       "/apartment-for-rent/den-haag/4267a9c4/denneweg",
       "/apartment-for-rent/den-haag/74d5b57a/daguerrestraat",
       "/apartment-for-rent/den-haag/8227bb1c/zeestraat",
       "/apartment-for-rent/den-haag/866cbd43/vrederustlaan",
       "/apartment-for-rent/den-haag/94ca02e7/hanedoesstraat",
-      "/apartment-for-rent/den-haag/97aea6c8/celsiusstraat",
-      "/apartment-for-rent/den-haag/a276e72a/godetiaweg",
       "/apartment-for-rent/den-haag/b441c142/valkenboskade",
-      "/apartment-for-rent/den-haag/b6424c99/celsiusstraat",
       "/apartment-for-rent/den-haag/b89fd692/van-musschenbroekstraat",
       "/apartment-for-rent/den-haag/bb295d33/de-perponcherstraat",
       "/apartment-for-rent/den-haag/bd2ff57a/goeverneurlaan",
       "/apartment-for-rent/den-haag/c2190122/mezenlaan",
       "/apartment-for-rent/den-haag/c38846e2/bazarstraat",
-      "/apartment-for-rent/den-haag/c76b9895/1e-lulofsdwarsstraat",
       "/apartment-for-rent/den-haag/ca3b5a88/vondelstraat",
       "/apartment-for-rent/den-haag/cec0835e/cornelis-de-wittlaan",
       "/apartment-for-rent/den-haag/d37ea6f3/escamplaan",
       "/apartment-for-rent/den-haag/ebd87094/van-boecopkade",
-      "/apartment-for-rent/den-haag/f5915d10/esdoornstraat",
       "/apartment-for-rent/den-haag/fa4cbd8f/beeklaan",
       "/apartments/den-haag/house"
     ],
