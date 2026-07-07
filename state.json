@@ -128,6 +128,7 @@
       "slug:carnegielaan-78",
       "slug:deimanstraat-240-kamer-1",
       "slug:dr-lelykade-150",
+      "slug:driebergenstraat-297",
       "slug:edisonstraat-32-c",
       "slug:frederik-hendriklaan-184-b",
       "slug:heemskerckstraat-17-kamer-5",
@@ -223,7 +224,8 @@
       "/en/for-rent/rotterdam/studio/ruwaardstraat-11678",
       "/en/for-rent/rotterdam/studio/ruwaardstraat-8450",
       "/en/for-rent/s-gravenhage/apartment/schapenlaan-11208",
-      "/en/for-rent/schiedam/apartment/rotterdamsedijk-11109"
+      "/en/for-rent/schiedam/apartment/rotterdamsedijk-11109",
+      "/en/for-rent/zwijndrecht/family-house/anthonie-heinsiusstraat-11266"
     ],
     "Avenir Vastgoed": [
       "/aanbod/aangekocht",
@@ -485,6 +487,7 @@
       "/apartment-for-rent/den-haag/28ab8afd/noord-west-buitensingel",
       "/apartment-for-rent/den-haag/2be79260/mient",
       "/apartment-for-rent/den-haag/2ca3b398/laan-van-meerdervoort",
+      "/apartment-for-rent/den-haag/2ca7ea29/randveen",
       "/apartment-for-rent/den-haag/2d8f61ef/oostduinplein",
       "/apartment-for-rent/den-haag/2e8b76db/zeesluisweg",
       "/apartment-for-rent/den-haag/306044e4/turfmarkt",
@@ -649,6 +652,7 @@
       "/apartment-for-rent/den-haag/faf9f2b6/waldorpstraat",
       "/apartment-for-rent/den-haag/fd639957/granaathorst",
       "/apartment-for-rent/den-haag/fd7924ff/gevers-deynootweg",
+      "/apartment-for-rent/den-haag/ff739540/tasmanstraat",
       "/apartment-for-rent/den-haag/ffb1f2a2/arnhemsestraat",
       "/apartments/den-haag/house"
     ],
