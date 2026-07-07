@@ -31,7 +31,9 @@
     ],
     "Rental Rotterdam Den Haag (max €1500)": [
       "/woningaanbod/huur/den-haag/escamplaan/862-w",
-      "/woningaanbod/huur/den-haag/laakweg/21-k"
+      "/woningaanbod/huur/den-haag/laakweg/21-k",
+      "/woningaanbod/huur/den-haag/laakweg/21-y",
+      "/woningaanbod/huur/den-haag/laakweg/30-l"
     ],
     "HAYMAN Rentals": [
       "/aanbod/columbusstraat",
@@ -324,6 +326,8 @@
       "/apartment-for-rent/den-haag/bd2ff57a/goeverneurlaan",
       "/apartment-for-rent/den-haag/c2190122/mezenlaan",
       "/apartment-for-rent/den-haag/c38846e2/bazarstraat",
+      "/apartment-for-rent/den-haag/dd35177d/laakweg",
+      "/apartment-for-rent/den-haag/e5574d02/laakweg",
       "/apartment-for-rent/den-haag/eb10490d/hooftskade",
       "/apartment-for-rent/den-haag/ff739540/tasmanstraat",
       "/apartments/den-haag/house"
