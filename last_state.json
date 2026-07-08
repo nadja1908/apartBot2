@@ -55,10 +55,10 @@
       "/en-gb/residential-listings/rent/the-hague/lange-beestenmarkt/ref-trs91003",
       "/en-gb/residential-listings/rent/the-hague/lange-beestenmarkt/ref-trs91070",
       "/en-gb/residential-listings/rent/the-hague/muzenstraat/ref-trs91054",
+      "/en-gb/residential-listings/rent/the-hague/noordeinde/ref-trs91077",
       "/en-gb/residential-listings/rent/the-hague/regentesselaan/ref-trs91072",
       "/en-gb/residential-listings/rent/the-hague/suezkade/ref-trs91060",
-      "/en-gb/residential-listings/rent/the-hague/vondelstraat/ref-trs91075",
-      "/en-gb/residential-listings/rent/the-hague/witte-de-withstraat/ref-trs91074"
+      "/en-gb/residential-listings/rent/the-hague/vondelstraat/ref-trs91075"
     ],
     "Kamernet Den Haag": [
       "/en/for-rent/apartment-de-lier/hoofdstraat/apartment-2387174",
@@ -79,11 +79,11 @@
     ],
     "Rotterdam Apartments": [
       "/en/for-rent/dordrecht/family-house/aletta-jacobs-erf-10906",
-      "/en/for-rent/rotterdam/apartment/bulgersteyn-6987",
       "/en/for-rent/rotterdam/apartment/coolhaven-5260",
       "/en/for-rent/rotterdam/apartment/goudsesingel-11194",
       "/en/for-rent/rotterdam/apartment/granadoslaan-11259",
       "/en/for-rent/rotterdam/apartment/havenstraat-5194",
+      "/en/for-rent/rotterdam/apartment/hooidrift-9969",
       "/en/for-rent/rotterdam/apartment/landverhuizersplein-5345",
       "/en/for-rent/rotterdam/apartment/mariniersweg-10926",
       "/en/for-rent/rotterdam/apartment/rosestraat-11343",
@@ -313,7 +313,6 @@
       "/apartment-for-rent/den-haag/96414934/vissershavenweg",
       "/apartment-for-rent/den-haag/9836c510/jan-van-nassaustraat",
       "/apartment-for-rent/den-haag/aa7cfa43/baambruggestraat",
-      "/apartment-for-rent/den-haag/b441c142/valkenboskade",
       "/apartment-for-rent/den-haag/bb55711d/jan-van-nassaustraat",
       "/apartment-for-rent/den-haag/c40f8ea2/jan-van-nassaustraat",
       "/apartment-for-rent/den-haag/d3c4d5ca/rederserf",
@@ -322,6 +321,7 @@
       "/apartment-for-rent/den-haag/dd35177d/laakweg",
       "/apartment-for-rent/den-haag/df286862/jan-van-nassaustraat",
       "/apartment-for-rent/den-haag/e5574d02/laakweg",
+      "/apartment-for-rent/den-haag/e60dcf5d/noordeinde",
       "/apartment-for-rent/den-haag/eb10490d/hooftskade",
       "/apartment-for-rent/den-haag/ff739540/tasmanstraat",
       "/apartments/den-haag/house"
