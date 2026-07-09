@@ -64,7 +64,6 @@
       "/en/for-rent/apartment-de-lier/hoofdstraat/apartment-2387174",
       "/en/for-rent/apartment-den-haag",
       "/en/for-rent/apartment-den-haag/de-carpentierstraat/apartment-2388895",
-      "/en/for-rent/apartment-den-haag/goeverneurlaan/apartment-2382481",
       "/en/for-rent/apartment-den-haag/van-musschenbroekstraat/apartment-2390429",
       "/en/for-rent/apartment-leiden/haarlemmerstraat/apartment-2391159",
       "/en/for-rent/apartment-leiden/hooigracht/apartment-2391227",
@@ -301,6 +300,7 @@
     ],
     "Pararius Den Haag": [
       "/apartment-for-rent/den-haag/07345a1d/sumatrastraat",
+      "/apartment-for-rent/den-haag/199dbdc2/brouwersgracht",
       "/apartment-for-rent/den-haag/223e4574/laan-van-nieuw-oost-indie",
       "/apartment-for-rent/den-haag/2ca7ea29/randveen",
       "/apartment-for-rent/den-haag/31abe28e/newtonstraat",
@@ -324,8 +324,8 @@
       "/apartment-for-rent/den-haag/e5c59307/herderinnestraat",
       "/apartment-for-rent/den-haag/e60dcf5d/noordeinde",
       "/apartment-for-rent/den-haag/f311aefe/daguerrestraat",
+      "/apartment-for-rent/den-haag/fb970914/aaltje-noordewierstraat",
       "/apartment-for-rent/den-haag/ff4cd8b9/repelaerstraat",
-      "/apartment-for-rent/den-haag/ff739540/tasmanstraat",
       "/apartments/den-haag/house"
     ],
     "Vesteda The Hague": [
