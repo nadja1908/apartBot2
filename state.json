@@ -55,6 +55,7 @@
       "slug:van-der-duynstraat-181"
     ],
     "Trechousing Rent": [
+      "/en-gb/residential-listings/rent/rotterdam/lambertusstraat/109-b02",
       "/en-gb/residential-listings/rent/rotterdam/lambertusstraat/ref-trs91052",
       "/en-gb/residential-listings/rent/the-hague/2e-sweelinckstraat/ref-trs91036",
       "/en-gb/residential-listings/rent/the-hague/adelheidstraat/ref-trs91046",
@@ -77,7 +78,8 @@
       "/en-gb/residential-listings/rent/the-hague/vondelstraat/ref-trs91064",
       "/en-gb/residential-listings/rent/the-hague/vondelstraat/ref-trs91067",
       "/en-gb/residential-listings/rent/the-hague/vondelstraat/ref-trs91075",
-      "/en-gb/residential-listings/rent/the-hague/witte-de-withstraat/ref-trs91074"
+      "/en-gb/residential-listings/rent/the-hague/witte-de-withstraat/ref-trs91074",
+      "/en-gb/residential-listings/rent/the-hague/zoutmanstraat/ref-trs91078"
     ],
     "Kamernet Den Haag": [
       "/en/for-rent/apartment-de-lier/hoofdstraat/apartment-2387174",
@@ -224,6 +226,7 @@
       "/en/for-rent/rotterdam/apartment/stationssingel-7768",
       "/en/for-rent/rotterdam/apartment/stationssingel-7769",
       "/en/for-rent/rotterdam/apartment/vondelweg-11682",
+      "/en/for-rent/rotterdam/apartment/w-g-witteveenplein-11652",
       "/en/for-rent/rotterdam/apartment/walenburgerweg-10705",
       "/en/for-rent/rotterdam/apartment/waterloostraat-11127",
       "/en/for-rent/rotterdam/apartment/weena-8528",
@@ -531,6 +534,7 @@
       "/apartment-for-rent/den-haag/4f2d22dd/laakweg",
       "/apartment-for-rent/den-haag/50f9dada/juliana-van-stolberglaan",
       "/apartment-for-rent/den-haag/524946e6/1e-lulofsdwarsstraat",
+      "/apartment-for-rent/den-haag/524b2023/zoutmanstraat",
       "/apartment-for-rent/den-haag/53bbea7e/stadhoudersplantsoen",
       "/apartment-for-rent/den-haag/5576ad07/regentesselaan",
       "/apartment-for-rent/den-haag/5662a54b/nassauplein",
@@ -677,6 +681,7 @@
       "/apartment-for-rent/den-haag/ea3777f8/vreeswijkstraat",
       "/apartment-for-rent/den-haag/eb10490d/hooftskade",
       "/apartment-for-rent/den-haag/ebd87094/van-boecopkade",
+      "/apartment-for-rent/den-haag/f09f6dc6/raamstraat",
       "/apartment-for-rent/den-haag/f19497d4/loosduinse-uitleg",
       "/apartment-for-rent/den-haag/f311aefe/daguerrestraat",
       "/apartment-for-rent/den-haag/f4b79cbb/scheveningseweg",
