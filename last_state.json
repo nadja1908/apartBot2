@@ -2,15 +2,14 @@
   "version": 2,
   "sources": {
     "Woonzeker Den Haag (filter)": [
-      "slug:edisonstraat-32-c",
-      "slug:kepplerstraat-249-b"
+      "slug:edisonstraat-32-c"
     ],
     "Woonzeker Den Haag (filter page 2)": [
+      "slug:carnegielaan-78",
       "slug:dr-lelykade-150",
-      "slug:noord-west-buitensingel-4-d",
-      "slug:stokroosstraat-237",
-      "slug:valeriusstraat-37",
-      "slug:vlaskamp-632"
+      "slug:edisonstraat-32-c",
+      "slug:lutherse-burgwal-11-j",
+      "slug:stokroosstraat-237"
     ],
     "Rental Rotterdam Den Haag (max €1500)": [
       "/woningaanbod/huur/den-haag/escamplaan/862-w",
@@ -68,6 +67,7 @@
       "/en/for-rent/dordrecht/family-house/aletta-jacobs-erf-10906",
       "/en/for-rent/rotterdam/apartment/granadoslaan-11259",
       "/en/for-rent/rotterdam/apartment/hooidrift-9969",
+      "/en/for-rent/rotterdam/apartment/kortekade-11683",
       "/en/for-rent/rotterdam/apartment/oudedijk-9294",
       "/en/for-rent/rotterdam/apartment/rosestraat-11343",
       "/en/for-rent/rotterdam/apartment/vondelweg-11682",
@@ -77,7 +77,6 @@
       "/en/for-rent/rotterdam/apartment/wijnbrugstraat-9441",
       "/en/for-rent/rotterdam/apartment/wijnkade-10491",
       "/en/for-rent/rotterdam/family-house/sportsingel-11647",
-      "/en/for-rent/rotterdam/studio/eendrachtsweg-10199",
       "/en/for-rent/rotterdam/studio/eendrachtsweg-8602",
       "/en/for-rent/zwijndrecht/family-house/anthonie-heinsiusstraat-11266"
     ],
@@ -113,7 +112,8 @@
       "/wonen/aanbod/theresiastraat-395-s-gravenhage-se120919",
       "/wonen/aanbod/vrederustlaan-435-s-gravenhage-se121639",
       "/wonen/aanbod/zeesluisweg-46-b-s-gravenhage-se121321",
-      "/wonen/aanbod/zeesluisweg-48-a-s-gravenhage-se121481"
+      "/wonen/aanbod/zeesluisweg-48-a-s-gravenhage-se121481",
+      "/wonen/aanbod/zeesluisweg-60-d-s-gravenhage-se121698"
     ],
     "Karens Real Estate": [
       "/den-haag-dr.-lelykade-h104830069",
@@ -124,7 +124,16 @@
       "/den-haag-laan-van-poot-h104830188",
       "/den-haag-verseveldtweg-h104830055"
     ],
-    "WoonCompany": [],
+    "WoonCompany": [
+      "/woning/den-haag-denneweg-14-e",
+      "/woning/den-haag-denneweg-14-g",
+      "/woning/den-haag-laan-van-meerdervoort-33",
+      "/woning/den-haag-laan-van-meerdervoort-509",
+      "/woning/den-haag-noordeinde-124-d",
+      "/woning/den-haag-noordwal-41",
+      "/woning/den-haag-weimarstraat",
+      "/woningen"
+    ],
     "BW Housing": [
       "/en/listings/house/den-haag/antonie-duyckstraat-42/66557d30d259084a996deaf3",
       "/en/listings/house/den-haag/arend-vijfvinkelplein-32/69429238f76bd3aa4ef9e496",
@@ -217,6 +226,7 @@
       "/den-haag-kepplerstraat-h104800051",
       "/den-haag-kepplerstraat-h104800053",
       "/den-haag-kepplerstraat-h104800054",
+      "/den-haag-kepplerstraat-h104800055",
       "/den-haag-kepplerstraat-h104800056",
       "/den-haag-kepplerstraat-h104800058",
       "/den-haag-kepplerstraat-h104800059",
@@ -246,7 +256,6 @@
       "/rotterdam-bernardus-gewinstraat-h104800103",
       "/s-gravenhage,-den-haag-kepplerstraat-h104800044",
       "/s-gravenhage,-den-haag-kepplerstraat-h104800052",
-      "/s-gravenhage,-den-haag-kepplerstraat-h104800055",
       "/s-gravenhage,-den-haag-kepplerstraat-h104800057",
       "/s-gravenhage-barentszstraat-h104800040",
       "/s-gravenhage-beeklaan-h104800007",
@@ -277,31 +286,31 @@
     ],
     "Pararius Den Haag": [
       "/apartment-for-rent/den-haag/07345a1d/sumatrastraat",
+      "/apartment-for-rent/den-haag/091c60c1/kepplerstraat",
       "/apartment-for-rent/den-haag/199dbdc2/brouwersgracht",
-      "/apartment-for-rent/den-haag/223e4574/laan-van-nieuw-oost-indie",
       "/apartment-for-rent/den-haag/23745d59/cornelis-van-der-lijnstraat",
       "/apartment-for-rent/den-haag/260f3f95/laan-van-meerdervoort",
       "/apartment-for-rent/den-haag/2bc9e79e/damasstraat",
       "/apartment-for-rent/den-haag/31abe28e/newtonstraat",
       "/apartment-for-rent/den-haag/32c72147/fijnjekade",
+      "/apartment-for-rent/den-haag/3496d4f1/weimarstraat",
       "/apartment-for-rent/den-haag/4dc702b6/fijnjekade",
       "/apartment-for-rent/den-haag/524b2023/zoutmanstraat",
-      "/apartment-for-rent/den-haag/6c41dc99/jan-van-nassaustraat",
       "/apartment-for-rent/den-haag/77cb4a70/hoogstraat",
       "/apartment-for-rent/den-haag/7b8ce184/bezuidenhoutseweg",
       "/apartment-for-rent/den-haag/7ee96dc3/obrechtstraat",
       "/apartment-for-rent/den-haag/81ca6121/noordeinde",
-      "/apartment-for-rent/den-haag/8363c944/bilderdijkstraat",
       "/apartment-for-rent/den-haag/8545687c/fijnjekade",
-      "/apartment-for-rent/den-haag/aa7cfa43/baambruggestraat",
+      "/apartment-for-rent/den-haag/87951075/van-slingelandtstraat",
       "/apartment-for-rent/den-haag/b9f26151/regentesselaan",
+      "/apartment-for-rent/den-haag/bd4b483d/van-musschenbroekstraat",
       "/apartment-for-rent/den-haag/c6605ddc/hemsterhuisstraat",
       "/apartment-for-rent/den-haag/d153961d/herderinnestraat",
-      "/apartment-for-rent/den-haag/db635793/jan-van-nassaustraat",
-      "/apartment-for-rent/den-haag/df286862/jan-van-nassaustraat",
+      "/apartment-for-rent/den-haag/d3079292/oude-haagweg",
+      "/apartment-for-rent/den-haag/e28bd99e/dunne-bierkade",
       "/apartment-for-rent/den-haag/e5c59307/herderinnestraat",
-      "/apartment-for-rent/den-haag/e60dcf5d/noordeinde",
       "/apartment-for-rent/den-haag/f09f6dc6/raamstraat",
+      "/apartment-for-rent/den-haag/f81044ce/oude-haagweg",
       "/apartment-for-rent/den-haag/fb970914/aaltje-noordewierstraat",
       "/apartment-for-rent/den-haag/ff4cd8b9/repelaerstraat",
       "/apartments/den-haag/house"
