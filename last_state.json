@@ -2,31 +2,14 @@
   "version": 2,
   "sources": {
     "Woonzeker Den Haag (filter)": [
-      "slug:beeklaan-343-c",
-      "slug:deimanstraat-240-kamer-1",
       "slug:edisonstraat-32-c",
-      "slug:frederik-hendriklaan-184-b",
-      "slug:herschelstraat-24-b",
-      "slug:kepplerstraat-249-b",
-      "slug:loosduinseweg-873",
-      "slug:pasteurstraat-150",
-      "slug:regentesselaan-161-d",
-      "slug:regentesselaan-183",
-      "slug:regentesselaan-185-a",
-      "slug:valkenboslaan-79-3e-etage"
+      "slug:kepplerstraat-249-b"
     ],
     "Woonzeker Den Haag (filter page 2)": [
-      "slug:bosschestraat-136",
-      "slug:carnegielaan-78",
       "slug:dr-lelykade-150",
-      "slug:driebergenstraat-297",
-      "slug:edisonstraat-32-c",
-      "slug:frederik-hendriklaan-184-b",
-      "slug:herschelstraat-24-b",
-      "slug:kepplerstraat-249-b",
-      "slug:lutherse-burgwal-11-j",
-      "slug:regentesselaan-161-d",
+      "slug:noord-west-buitensingel-4-d",
       "slug:stokroosstraat-237",
+      "slug:valeriusstraat-37",
       "slug:vlaskamp-632"
     ],
     "Rental Rotterdam Den Haag (max €1500)": [
@@ -100,7 +83,6 @@
     ],
     "Avenir Vastgoed": [
       "/aanbod/aangekocht",
-      "/aanbod/denijsstraat-80/6a465a40839a929c874b0be2",
       "/aanbod/huurwoningen",
       "/aanbod/koopwoningen",
       "/aanbod/transacties"
@@ -142,16 +124,7 @@
       "/den-haag-laan-van-poot-h104830188",
       "/den-haag-verseveldtweg-h104830055"
     ],
-    "WoonCompany": [
-      "/woning/den-haag-denneweg-14-e",
-      "/woning/den-haag-denneweg-14-g",
-      "/woning/den-haag-laan-van-meerdervoort-33",
-      "/woning/den-haag-laan-van-meerdervoort-509",
-      "/woning/den-haag-noordeinde-124-d",
-      "/woning/den-haag-noordwal-41",
-      "/woning/den-haag-weimarstraat",
-      "/woningen"
-    ],
+    "WoonCompany": [],
     "BW Housing": [
       "/en/listings/house/den-haag/antonie-duyckstraat-42/66557d30d259084a996deaf3",
       "/en/listings/house/den-haag/arend-vijfvinkelplein-32/69429238f76bd3aa4ef9e496",
@@ -300,7 +273,6 @@
       "/en/listings/prins-mauritslaan-71-b-den-haag.html",
       "/en/listings/prinsegracht-69-s-den-haag.html",
       "/en/listings/prinsegracht-73-k-den-haag.html",
-      "/en/listings/prinsegracht-73-l-den-haag.html",
       "/en/listings/van-der-kunstraat-12-den-haag.html"
     ],
     "Pararius Den Haag": [
@@ -316,14 +288,14 @@
       "/apartment-for-rent/den-haag/524b2023/zoutmanstraat",
       "/apartment-for-rent/den-haag/6c41dc99/jan-van-nassaustraat",
       "/apartment-for-rent/den-haag/77cb4a70/hoogstraat",
+      "/apartment-for-rent/den-haag/7b8ce184/bezuidenhoutseweg",
       "/apartment-for-rent/den-haag/7ee96dc3/obrechtstraat",
       "/apartment-for-rent/den-haag/81ca6121/noordeinde",
       "/apartment-for-rent/den-haag/8363c944/bilderdijkstraat",
       "/apartment-for-rent/den-haag/8545687c/fijnjekade",
-      "/apartment-for-rent/den-haag/9836c510/jan-van-nassaustraat",
       "/apartment-for-rent/den-haag/aa7cfa43/baambruggestraat",
-      "/apartment-for-rent/den-haag/bb55711d/jan-van-nassaustraat",
-      "/apartment-for-rent/den-haag/c40f8ea2/jan-van-nassaustraat",
+      "/apartment-for-rent/den-haag/b9f26151/regentesselaan",
+      "/apartment-for-rent/den-haag/c6605ddc/hemsterhuisstraat",
       "/apartment-for-rent/den-haag/d153961d/herderinnestraat",
       "/apartment-for-rent/den-haag/db635793/jan-van-nassaustraat",
       "/apartment-for-rent/den-haag/df286862/jan-van-nassaustraat",
