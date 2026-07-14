@@ -64,13 +64,11 @@
       "/en/aanbod"
     ],
     "Rotterdam Apartments": [
-      "/en/for-rent/dordrecht/family-house/aletta-jacobs-erf-10906",
       "/en/for-rent/rotterdam/apartment/granadoslaan-11259",
       "/en/for-rent/rotterdam/apartment/hooidrift-9969",
       "/en/for-rent/rotterdam/apartment/kortekade-11683",
       "/en/for-rent/rotterdam/apartment/oudedijk-9294",
       "/en/for-rent/rotterdam/apartment/prinses-margrietlaan-11119",
-      "/en/for-rent/rotterdam/apartment/rosestraat-11343",
       "/en/for-rent/rotterdam/apartment/vondelweg-11682",
       "/en/for-rent/rotterdam/apartment/w-g-witteveenplein-11652",
       "/en/for-rent/rotterdam/apartment/weena-8528",
@@ -78,6 +76,8 @@
       "/en/for-rent/rotterdam/apartment/wijnbrugstraat-9441",
       "/en/for-rent/rotterdam/apartment/wijnkade-10491",
       "/en/for-rent/rotterdam/family-house/sportsingel-11647",
+      "/en/for-rent/rotterdam/studio/eendrachtsweg-10199",
+      "/en/for-rent/rotterdam/studio/eendrachtsweg-8602",
       "/en/for-rent/zwijndrecht/family-house/anthonie-heinsiusstraat-11266"
     ],
     "Avenir Vastgoed": [
@@ -301,6 +301,7 @@
       "/apartment-for-rent/den-haag/81ca6121/noordeinde",
       "/apartment-for-rent/den-haag/8545687c/fijnjekade",
       "/apartment-for-rent/den-haag/87951075/van-slingelandtstraat",
+      "/apartment-for-rent/den-haag/9ff08694/sumatrastraat",
       "/apartment-for-rent/den-haag/b9f26151/regentesselaan",
       "/apartment-for-rent/den-haag/bd4b483d/van-musschenbroekstraat",
       "/apartment-for-rent/den-haag/c6605ddc/hemsterhuisstraat",
@@ -308,7 +309,6 @@
       "/apartment-for-rent/den-haag/d3079292/oude-haagweg",
       "/apartment-for-rent/den-haag/e28bd99e/dunne-bierkade",
       "/apartment-for-rent/den-haag/e5c59307/herderinnestraat",
-      "/apartment-for-rent/den-haag/e60dcf5d/noordeinde",
       "/apartment-for-rent/den-haag/f09f6dc6/raamstraat",
       "/apartment-for-rent/den-haag/f81044ce/oude-haagweg",
       "/apartment-for-rent/den-haag/fb970914/aaltje-noordewierstraat",
